@@ -19,6 +19,7 @@ It combines:
 - [Model Choices](#model-choices)
 - [Known Limitations](#known-limitations)
 - [Roadmap](#roadmap)
+- [Demo Output](#Demo_Output)
 
 ---
 
@@ -152,8 +153,8 @@ All models currently used are served via Groq and are open-weight (no proprietar
 | Step | Model | Why |
 |---|---|---|
 | Ticker extraction | `llama-3.1-8b-instant` | Trivial task, fast + cheap |
-| Chunk summarization | `llama-3.1-8b-instant` | Runs in a loop, mechanical extraction, cost matters |
-| Thesis generation | *(should be set explicitly — see [Known Limitations](#known-limitations))* | Needs stronger reasoning for synthesis and recommendation quality |
+| Chunk summarization | `llama-3.3-70b-versatile` | Runs in a loop, mechanical extraction, cost matters |
+| Thesis generation | `llama-3.3-70b-versatile` | Needs stronger reasoning for synthesis and recommendation quality |
 
 > **Recommendation:** for the thesis-generation step, use a larger open-weight model such as `llama-3.3-70b-versatile` or `openai/gpt-oss-120b` (both available on Groq's free tier, rate-limited rather than paywalled). Verify current model IDs and free-tier limits against [Groq's docs](https://console.groq.com/docs/models), since these change over time.
 
@@ -176,3 +177,6 @@ All models currently used are served via Groq and are open-weight (no proprietar
 - [ ] Add response caching to avoid redundant API calls
 - [ ] Support batch analysis across a watchlist of tickers
 - [ ] Add a lightweight front-end to render the HTML thesis
+
+
+## Demo_Output
