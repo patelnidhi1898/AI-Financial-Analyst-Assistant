@@ -18,8 +18,7 @@ It combines:
 - [Usage](#usage)
 - [Model Choices](#model-choices)
 - [Known Limitations](#known-limitations)
-- [Roadmap](#roadmap)
-- [Demo Output](#Demo_Output)
+- [Demo Output](#demo-output)
 
 ---
 
@@ -170,13 +169,8 @@ All models currently used are served via Groq and are open-weight (no proprietar
 
 ---
 
-## Roadmap
+## Demo Output
 
-- [ ] Fix missing `model=` parameter in thesis generation call
-- [ ] Add retry/backoff handling for `429` responses
-- [ ] Add response caching to avoid redundant API calls
-- [ ] Support batch analysis across a watchlist of tickers
-- [ ] Add a lightweight front-end to render the HTML thesis
+https://github.com/user-attachments/assets/8edf3c4e-7143-4b43-b693-e105ab382187
 
-
-## Demo_Output
+---
