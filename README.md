@@ -57,18 +57,18 @@ Financial data sources are inconsistent — not every ticker has clean cash flow
 
 ```mermaid
 flowchart TD
-    A[User request: "Should I invest in NVIDIA?"] --> B[LLM: extract company name + ticker]
-    B --> C[Fetch news - Serper API]
-    B --> D[Fetch stock price history - yfinance]
-    B --> E[Fetch financial statements - yahooquery]
+    A[User Request: Should I invest in NVIDIA?] --> B[LLM: Extract company name and ticker]
+    B --> C[Fetch news via Serper API]
+    B --> D[Fetch stock price history via yfinance]
+    B --> E[Fetch financial statements via yahooquery]
     C --> F[investment.txt]
     D --> F
     E --> F
-    F --> G[Chunk + summarize raw data - LLM, small model]
-    G --> H[Generate full investment thesis - LLM, stronger model]
-    H --> I[HTML thesis: BUY / HOLD / SELL]
+    F --> G[Chunk and summarize raw data via small LLM]
+    G --> H[Generate full investment thesis via stronger LLM]
+    H --> I[Output: BUY / HOLD / SELL]
 ```
-
+ 
 ---
 
 ## Step-by-Step Pipeline
